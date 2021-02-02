@@ -18,37 +18,35 @@
   border-top: 1px solid #ebebeb;
 }
 
+#hero {
+  background: url('../images/hero-bg.jpg');
+  height: 1079px;
+  background-position-x: center;
+  background-size: cover;
+}
+
+#hero .navbar.is-transparent {
+  background-color: transparent;
+}
+
+#contact {
+  background: url('../images/contact-bg.jpg');
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu a.has-text-white {
+    color: #4a4a4a !important;
+  }
+  .navbar-menu a.has-text-white:hover {
+    color: #1665ca!important;
+  }
+}
+
 // PERSONALIZACION DE BULMA
 // Cambiamos nuestro estilo por defecto
-// Comentar y descomentar para ver los cambios
-
-// Cambiamos los colores
-/* $coffee: #362D26;
-$coffe-light: #6f4e37;
-$brown: #757763;
-$beige-light: #d0d1cd;
-$beige-lighter: #fcfcfc;
-
-// Actualizamos las variables de Bulma
-$family-sans-serif: 'Montserrat', sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $coffee;
-$link: $coffe-light;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
-// O añadir nuevos colores
-$twitter: #55acee;
-$twitter-invert: findColorInvert($twitter);
-$github: #333;
-$github-invert: findColorInvert($github);
-
-// Podemos cambiar si queremos algunos elementos de los componentes
-$body-background-color: $beige-lighter;
-$control-border-width: 1px;
-$input-border-color: transparent;
-$input-shadow: none;
+$family-sans-serif: 'Ubuntu', sans-serif;
 
 // O añadir nuevos colores
 $twitter: #55acee;
@@ -78,11 +76,11 @@ $colors: map-merge($colors, $addColors);
 // 6. Importamos el resto de Bulma
 @import 'node_modules/bulma/bulma.sass';
 
-// Tocamos mis
+// Tocamos estilos de bulma
 .footer {
   padding: 2rem 1.5rem 1rem;
 }
- */
+
 
 // Importamos solo lo que queramos de Bulma para reducir
 // @import "node_modules/bulma/sass/utilities/all";

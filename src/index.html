@@ -20,28 +20,29 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
 
     <!-- FUENTES-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
-    
 
 
 </head>
 
 <body>
     <!-- ENCABEZADO -->
-    <header class="section has-background-link py-4 has-text-white">
+    <header class="section has-background-link-dark py-4 has-text-white">
         <div class="container">
             <div class="columns is-centered">
-                <div class="column">
+                <div class="column is-4 has-text-left">
                     <span class="icon">
                         <i class="mdi mdi-email"></i>
                     </span>
                     email@tu-email.com
                 </div>
-                <div class="column">
+                <div class="column is-4 has-text-centered-desktop">
                     <i class="mdi mdi-phone"></i>
                     +69 69 69 69
                 </div>
-                <div class="column has-text-right-tablet">
+                <div class="column has-text-right-tablet is-4">
                     <i class="mdi mdi-headphones"></i>
                     Soporte
                 </div>
@@ -54,14 +55,14 @@
     <section class="section" id="hero">
         <div class="container">
             <!-- NAVBAR -->
-            <nav class="navbar is is-transparent" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
                 <!-- logo -->
                 <div class="navbar-brand">
                     <a class="navbar-item" href="#">
-                        <img src="assets/images/logo.png" width="112" height="28">
+                        <img src="assets/images/logo.png" height="100">
                     </a>
                     <!-- burguer -->
-                    <a role="button" id="navbar-menu-burguer" class="navbar-burger" aria-label="menu"
+                    <a role="button" id="navbar-menu-burguer" class="navbar-burger has-text-white" aria-label="menu"
                         aria-expanded="false" data-target="navbar-menu-items">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -327,19 +328,15 @@
             </div>
 
             <!-- Grupo de botones -->
-            <div class="field is-grouped mt-6 is-flex service-buttons">
-                <p class="control">
-                    <button class="button is-warning">
-                        Consulta gratuita
-                    </button>
-                </p>
-                <p class="control">
-                    <button class="button is-info">
-                        Pide presupuesto
-                    </button>
-                </p>
+            <div class="mt-6 has-text-centered">
+                <button class="button is-warning mx-2">
+                    Consulta gratuita
+                </button>
+                <button class="button is-info mx-2">
+                    Pide presupuesto
+                </button>
             </div>
-            
+
             <!-- Logos de cosas -->
             <div class="columns mt-6 pt-5 logos is-relative">
                 <div class="column">
@@ -399,36 +396,57 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Comentarios -->
-            <div class="column has-text-dark pt-6 pl-6">
-                <span class="icon is-size-1 pb-6 my-3 has-text-grey-lighter">
-                    <i class="mdi  mdi-format-quote-open"></i>
-                </span>
-                <article class="media">
-                    <figure class="media-left">
-                        <p class="image is-64x64">
-                            <img src="assets/images/testimonial.png">
-                        </p>
-                    </figure>
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
-                                vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+
+                <!-- Comentarios -->
+                <div class="column has-text-light pt-6 pl-6">
+                    <span class="icon is-size-1 pb-6 my-3 has-text-grey-lighter">
+                        <i class="mdi  mdi-format-quote-open"></i>
+                    </span>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="assets/images/testimonial.png">
                             </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong class="has-text-light">John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                                    <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                    pellentesque tortor
+                                    vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <span class="icon is-size-1 pt-6 pr-3 my-3 has-text-grey-lighter is-pulled-right">
-                    <i class="mdi  mdi-format-quote-close"></i>
-                </span>
+                    </article>
+                    <span class="icon is-size-1 pt-6 pr-3 my-3 has-text-grey-lighter is-pulled-right">
+                        <i class="mdi  mdi-format-quote-close"></i>
+                    </span>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer id="Footer" class="footer">
+        <div class="content has-text-centered">
+            <p class="copyright">Coding with <i class="mdi mdi-heart-multiple" size="is-small"></i> &copy;
+                <a href="http://github.com/joseluisgs" target="_blank" rel="noopener noreferrer">José Luis González
+                    Sánchez</a>. 2021
+            </p>
+            <a href="https://twitter.com/joseluisgonsan" target="_blank">
+                <i class="mdi mdi-24px mdi-twitter has-text-twitter"></i>
+            </a>
+            <a href="https://github.com/joseluisgs" target="_blank">
+                <i class="mdi mdi-24px mdi-github has-text-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joseluisgonsan/?locale=es_ES" target="_blank">
+                <i class="mdi mdi-24px mdi-linkedin has-text-linkedin"></i>
+            </a>
+        </div>
+    </footer>
 
     <!-- SCRIPTS 
          Si no concatenas debes poner todos aquí los que usas -->
