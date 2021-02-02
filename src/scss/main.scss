@@ -6,7 +6,17 @@
 @import 'node_modules/bulma/sass/utilities/functions';
 
 // Si quiero alinear algo abajo de todo de una columna
-// #precio { margin-top: auto; }
+
+// Para hacer o simular un divider
+// Otra opción es usar: https://wikiki.github.io/layout/divider/
+.logos:before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 0;
+  border-top: 1px solid #ebebeb;
+}
 
 // PERSONALIZACION DE BULMA
 // Cambiamos nuestro estilo por defecto
