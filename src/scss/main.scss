@@ -7,6 +7,89 @@
 
 // Si quiero alinear algo abajo de todo de una columna
 
+// Temas 
+@import 'theme-colors';
+$animate_theme: 1s; // Mejoras en el tema osucro para que parezca animado
+
+
+
+// PERSONALIZACION DE BULMA
+// Cambiamos nuestro estilo por defecto
+$family-sans-serif: 'Ubuntu', sans-serif;
+
+// O añadir nuevos colores
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+// Actualizmos el mapa de colores
+@import 'node_modules/bulma/sass/utilities/derived-variables';
+$addColors: (
+  'twitter': (
+    $twitter,
+    $twitter-invert,
+  ),
+  'github': (
+    $github,
+    $github-invert,
+  ),
+  'linkedin': (
+    $linkedin,
+    $linkedin-invert,
+  ),
+);
+$colors: map-merge($colors, $addColors);
+
+// 6. Importamos el resto de Bulma
+@import 'node_modules/bulma/bulma.sass';
+
+// Retocamos el estilo
+html {
+  overflow: scroll; // Saco la barra de scroll
+  overflow-x: hidden; // Escondo la barra horizontal
+  background-color: var(--app-background-color);
+  transition: background-color $animate_theme;
+}
+
+body {
+  background: var(--app-background-color);
+  transition: background $animate_theme;
+}
+
+
+// Elementos para colores especificos según el tema
+.title {
+  color: var(--dynamic-title-color);
+}
+
+.subtitle {
+  color: var(--dynamic-subtitle-color);
+}
+
+label.label {
+  color: var(--dynamic-title-color);
+}
+
+.card {
+  background-color: var(--app-background-secoundary-color);
+  color: var(--dynamic-title-color);
+  transition: background-color $animate_theme;
+}
+
+
+// Algunos estilos propios que voy a usar en algunos elementos, por ejemplo para no modificar el h1.title
+.dynamic-title {
+  color: var(--dynamic-title-color);
+}
+
+.dynamic-subtitle {
+  color: var(--dynamic-subtitle-color);
+  // padding-top: 10px;
+}
+
+
 // Para hacer o simular un divider
 // Otra opción es usar: https://wikiki.github.io/layout/divider/
 .logos:before {
@@ -43,38 +126,6 @@
     color: #1665ca!important;
   }
 }
-
-// PERSONALIZACION DE BULMA
-// Cambiamos nuestro estilo por defecto
-$family-sans-serif: 'Ubuntu', sans-serif;
-
-// O añadir nuevos colores
-$twitter: #55acee;
-$twitter-invert: findColorInvert($twitter);
-$github: #333;
-$github-invert: findColorInvert($github);
-$linkedin: #0077b5;
-$linkedin-invert: findColorInvert($linkedin);
-// Actualizmos el mapa de colores
-@import 'node_modules/bulma/sass/utilities/derived-variables';
-$addColors: (
-  'twitter': (
-    $twitter,
-    $twitter-invert,
-  ),
-  'github': (
-    $github,
-    $github-invert,
-  ),
-  'linkedin': (
-    $linkedin,
-    $linkedin-invert,
-  ),
-);
-$colors: map-merge($colors, $addColors);
-
-// 6. Importamos el resto de Bulma
-@import 'node_modules/bulma/bulma.sass';
 
 // Tocamos estilos de bulma
 .footer {
