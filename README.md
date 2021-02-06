@@ -10,7 +10,7 @@ Ejemplo de como crear una página de una compañía usando Bulma y personalizand
 
 ## Acerca de
 
-Pagina web de una compañía realizada con [Bulma](https://bulma.io/) y cambiar su apariencia con Sass. La intercatividad está realizada con Vanila JS. Para ello se ha creado una serie de tareas automatizadas con [Gulp](https://gulpjs.com/) y se ha añadido como iconos [Font Awesome](https://fontawesome.com/)/[Material Desing Icons](https://materialdesignicons.com/) cambíandolos desde el fichero HTML, o simplemente pudiendo elegir ambos si se quiere.
+Pagina web de una compañía realizada con [Bulma](https://bulma.io/) y cambiar su apariencia con Sass. La intercatividad está realizada con Vanila JS. Para ello se ha creado una serie de tareas automatizadas con [Gulp](https://gulpjs.com/) y se ha añadido como iconos [Font Awesome](https://fontawesome.com/)/[Material Desing Icons](https://materialdesignicons.com/) cambíandolos desde el fichero HTML, o simplemente pudiendo elegir ambos si se quiere. Se ha añadido la opción del modo oscuro.
 
 ### Capturas
 <img src="./images/desktop.jpg" height="600"/>
